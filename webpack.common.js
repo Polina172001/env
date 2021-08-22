@@ -9,8 +9,7 @@ module.exports = {
     publicPath: '/',
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
@@ -19,11 +18,9 @@ module.exports = {
       },
       {
         test: /\.html$/,
-        use: [
-          {
-            loader: 'html-loader',
-          },
-        ],
+        use: [{
+          loader: 'html-loader',
+        }, ],
       },
       {
         test: /\.css$/,
